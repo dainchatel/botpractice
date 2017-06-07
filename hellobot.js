@@ -1,7 +1,7 @@
 module.exports = function (req, res, next) {
   var userName = req.body.user_name;
   var beefName = '';
-  if (userName === 'dain') {
+  if (userName === 'dainchatel') {
     beefName = 'dad'
   }
   else {
