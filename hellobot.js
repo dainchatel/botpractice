@@ -5,7 +5,7 @@ module.exports = function (req, res, next) {
     beefName = 'dad'
   }
   else {
-    beefName = userName;
+    beefName = 'lady'
   }
   var botPayload = {
     text : 'Hello, ' + beefName + '!'
