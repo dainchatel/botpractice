@@ -1,7 +1,14 @@
 module.exports = function (req, res, next) {
   var userName = req.body.user_name;
+  var beefName = '';
+  if (userName = 'Dain') {
+    beefName = 'dad'
+  }
+  else {
+    beefName = userName;
+  }
   var botPayload = {
-    text : 'Hello, ' + userName + '!'
+    text : 'Hello, ' + beefName + '!'
   };
 
   // avoid infinite loop
