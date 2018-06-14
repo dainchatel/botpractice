@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var hellobot = require('./hellobot');
+const ikebot = require('./ikebot')
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -13,6 +14,7 @@ app.get('/', function (req, res) { res.status(200).send('Hello world!') });
 
 // post route
 app.post('/hello', hellobot);
+app.post('/ike', ikebot)
 
 // error handler
 app.use(function (err, req, res, next) {
